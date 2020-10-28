@@ -1,0 +1,17 @@
+*,
+*::after, /* put on actual as well as psedu elements*/
+*::before {
+    margin: 0;
+    padding: 0;
+    /* inherit box sizing property from body and all elements will have it */
+    box-sizing: inherit;
+}
+
+html {
+    //  this defines what 1 rem is
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
