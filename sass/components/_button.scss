@@ -39,6 +39,16 @@
         }
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+        display: inline-block;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
     /* ::after is a psedu element which act like it is behind the element */
     &::after {
         content: "";
