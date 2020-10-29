@@ -1,0 +1,18 @@
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh; // to move the section container in touch with landing image, --> 95vh (total)- 75vh(image polygon) = 20 in upward
+}
+
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)) ,url(../img/hero.jpg);
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: -9rem;
+
+    // all direct child of this
+    & > * {
+        transform: skewY(7deg);
+    }
+}
